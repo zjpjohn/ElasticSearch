@@ -1,3 +1,12 @@
+package com.zjp.search.annotation;
+
+import com.zjp.search.enums.Analyzer;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
 /**
  * ©•©•©•©•©•©•oooo©•©•©•©•©•©•
  * °°°°°°©≥©∑°°°°°°©≥©∑
@@ -18,10 +27,21 @@
  * °°°°°°°°°°©ß©œ©œ°°©ß©œ©œ
  * °°°°°°°°°°©ª©ﬂ©ø°°©ª©ﬂ©ø
  * ©•©•©•©•©•©•√»√»ﬂ’©•©•©•©•©•©•
- * Module Desc:com.zjp.search.request
+ * Module Desc:com.zjp.search.annotation
  * User: zjprevenge
- * Date: 2016/9/6
- * Time: 20:00
+ * Date: 2016/9/7
+ * Time: 16:58
  */
 
-package com.zjp.search.request;
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.TYPE)
+public @interface Suggest {
+    String name() default "suggest";
+
+    /**
+     * ∑÷¥ ∆˜
+     *
+     * @return
+     */
+    Analyzer analyzer() default Analyzer.not_analyzed;
+}

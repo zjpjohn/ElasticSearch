@@ -1,3 +1,5 @@
+package com.zjp.search.enums;
+
 /**
  * ©•©•©•©•©•©•oooo©•©•©•©•©•©•
  * °°°°°°©≥©∑°°°°°°©≥©∑
@@ -18,10 +20,24 @@
  * °°°°°°°°°°©ß©œ©œ°°©ß©œ©œ
  * °°°°°°°°°°©ª©ﬂ©ø°°©ª©ﬂ©ø
  * ©•©•©•©•©•©•√»√»ﬂ’©•©•©•©•©•©•
- * Module Desc:com.zjp.search.bean
+ * Module Desc:com.zjp.search.enums
  * User: zjprevenge
- * Date: 2016/9/6
- * Time: 19:59
+ * Date: 2016/9/7
+ * Time: 16:18
  */
 
-package com.zjp.search.bean;
+public enum Analyzer {
+
+    standard,
+    simple,
+    ik,
+    stop,
+    keyword,
+    whitespace,
+    snowball,
+    not_analyzed,
+    ansj_query,
+    ansj_index,
+    ansj_auto
+
+}

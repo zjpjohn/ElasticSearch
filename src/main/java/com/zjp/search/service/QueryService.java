@@ -1,3 +1,12 @@
+package com.zjp.search.service;
+
+import org.elasticsearch.client.transport.TransportClient;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
+
 /**
  * ©•©•©•©•©•©•oooo©•©•©•©•©•©•
  * °°°°°°©≥©∑°°°°°°©≥©∑
@@ -18,10 +27,17 @@
  * °°°°°°°°°°©ß©œ©œ°°©ß©œ©œ
  * °°°°°°°°°°©ª©ﬂ©ø°°©ª©ﬂ©ø
  * ©•©•©•©•©•©•√»√»ﬂ’©•©•©•©•©•©•
- * Module Desc:com.zjp.search.annotation
+ * Module Desc:com.zjp.search.service
  * User: zjprevenge
- * Date: 2016/9/6
- * Time: 19:59
+ * Date: 2016/9/7
+ * Time: 23:41
  */
+@Service
+public class QueryService {
+    private static final Logger log = LoggerFactory.getLogger(QueryService.class);
 
-package com.zjp.search.annotation;
+    @Resource
+    private TransportClient client;
+
+
+}

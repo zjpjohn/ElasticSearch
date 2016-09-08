@@ -1,3 +1,5 @@
+package com.zjp.search.enums;
+
 /**
  * ━━━━━━oooo━━━━━━
  * 　　　┏┓　　　┏┓
@@ -18,10 +20,17 @@
  * 　　　　　┃┫┫　┃┫┫
  * 　　　　　┗┻┛　┗┻┛
  * ━━━━━━萌萌哒━━━━━━
- * Module Desc:com.zjp.search.response
+ * Module Desc:com.zjp.search.enums
  * User: zjprevenge
- * Date: 2016/9/6
- * Time: 20:00
+ * Date: 2016/9/7
+ * Time: 16:24
  */
 
-package com.zjp.search.response;
+public enum BoolQueryType {
+    //and关系
+    MUST,
+    //or关系
+    SHOULD,
+    //not关系
+    MUST_NOT
+}

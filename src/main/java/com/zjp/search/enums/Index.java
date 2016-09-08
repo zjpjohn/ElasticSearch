@@ -1,3 +1,5 @@
+package com.zjp.search.enums;
+
 /**
  * ©•©•©•©•©•©•oooo©•©•©•©•©•©•
  * °°°°°°©≥©∑°°°°°°©≥©∑
@@ -18,10 +20,13 @@
  * °°°°°°°°°°©ß©œ©œ°°©ß©œ©œ
  * °°°°°°°°°°©ª©ﬂ©ø°°©ª©ﬂ©ø
  * ©•©•©•©•©•©•√»√»ﬂ’©•©•©•©•©•©•
- * Module Desc:com.zjp.search.client
+ * Module Desc:com.zjp.search.enums
  * User: zjprevenge
- * Date: 2016/9/6
- * Time: 19:59
+ * Date: 2016/9/7
+ * Time: 22:29
  */
 
-package com.zjp.search.client;
+public enum Index {
+    not_analyzed,
+    analyzed
+}

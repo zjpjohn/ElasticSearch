@@ -1,3 +1,5 @@
+package com.zjp.search.enums;
+
 /**
  * ©•©•©•©•©•©•oooo©•©•©•©•©•©•
  * °°°°°°©≥©∑°°°°°°©≥©∑
@@ -18,10 +20,30 @@
  * °°°°°°°°°°©ß©œ©œ°°©ß©œ©œ
  * °°°°°°°°°°©ª©ﬂ©ø°°©ª©ﬂ©ø
  * ©•©•©•©•©•©•√»√»ﬂ’©•©•©•©•©•©•
- * Module Desc:com.zjp.search.query
+ * Module Desc:com.zjp.search.enums
  * User: zjprevenge
- * Date: 2016/9/6
- * Time: 19:59
+ * Date: 2016/9/7
+ * Time: 16:28
  */
 
-package com.zjp.search.query;
+public enum FieldType {
+
+    STRING("string"),
+    DOUBLE("double"),
+    NESTED("nested"),
+    OBJECT("object"),
+    BOOLEAN("boolean"),
+    INTEGER("integer"),
+    DATE("date"),
+    LONG("long");
+
+    private String typeValue;
+
+    FieldType(String typeValue) {
+        this.typeValue = typeValue;
+    }
+
+    public String getTypeValue() {
+        return typeValue;
+    }
+}
